@@ -1,5 +1,5 @@
 header .nav {
-  background-color: #c3dff7;
+  background-color: #2d88d8;
   display: flex;
   align-items: center;
   justify-content: space-between; }
@@ -24,6 +24,7 @@ header .nav {
           font-style: italic; }
 
 main {
+  background-color: #9fcfdf;
   padding: 10em;
   display: flex;
   gap: 10px; }
@@ -44,7 +45,7 @@ main {
     border-radius: 2em; }
 
 footer {
-  background-color: aliceblue;
+  background-color: #eaf2f8;
   padding: 3em;
   display: flex;
   gap: 10px;
@@ -77,6 +78,6 @@ footer {
   box-sizing: border-box; }
 
 body {
-  background-color: lightblue;
+  background-color: #5e98ac;
   font-family: 'Nunito', sans-serif;
   font-weight: 800; }

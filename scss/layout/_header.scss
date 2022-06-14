@@ -1,0 +1,33 @@
+header{
+    .nav{
+        background-color: $bg-header;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .logo{
+            width: 5em;
+        }
+        .menu{
+            list-style-type: none;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            .boton{
+                padding: 10px;
+                margin: 10px;
+                &:hover{
+                    background-color: rgb(41, 105, 105);
+                    border-radius: 0.7em;
+                }
+                a{
+                    text-decoration: none;
+                    color: black;
+                    &:hover{
+                        color: aliceblue;
+                        font-style: italic ;
+                    }
+                }
+            }
+        }
+    }
+}

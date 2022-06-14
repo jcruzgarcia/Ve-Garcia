@@ -1,0 +1,82 @@
+header .nav {
+  background-color: #c3dff7;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  header .nav .logo {
+    width: 5em; }
+  header .nav .menu {
+    list-style-type: none;
+    padding: 10px;
+    display: flex;
+    align-items: center; }
+    header .nav .menu .boton {
+      padding: 10px;
+      margin: 10px; }
+      header .nav .menu .boton:hover {
+        background-color: #296969;
+        border-radius: 0.7em; }
+      header .nav .menu .boton a {
+        text-decoration: none;
+        color: black; }
+        header .nav .menu .boton a:hover {
+          color: aliceblue;
+          font-style: italic; }
+
+main {
+  padding: 10em;
+  display: flex;
+  gap: 10px; }
+  main .letras {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column; }
+    main .letras .titulo1 {
+      font-weight: bold;
+      font-size: 2em;
+      padding-bottom: 0.4em; }
+    main .letras .description {
+      font-size: 1.2em;
+      font-style: italic; }
+  main img {
+    width: 47em;
+    border-radius: 2em; }
+
+footer {
+  background-color: aliceblue;
+  padding: 3em;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center; }
+  footer .email {
+    border-style: solid;
+    border-color: blue;
+    border: 5px;
+    height: 30px;
+    font-family: 'Nunito', sans-serif;
+    padding: 0.5em; }
+  footer .botonSub {
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    height: 30px;
+    padding: 8px;
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    footer .botonSub:hover {
+      color: lightseagreen;
+      font-size: 102%; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: lightblue;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800; }

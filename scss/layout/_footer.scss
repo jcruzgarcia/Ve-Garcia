@@ -1,0 +1,31 @@
+footer{
+    background-color: $bg-footer;
+    padding: 3em;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    .email{
+        border-style: solid;
+        border-color: blue;
+        border: 5px;
+        height: 30px;
+        font-family: 'Nunito', sans-serif;
+        padding:0.5em
+    }
+    .botonSub{
+        font-family: 'Nunito', sans-serif;
+        font-weight: bold;
+        height: 30px;
+        padding: 8px;
+        background-color: black;
+        color:aliceblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover{
+            color: lightseagreen;
+            font-size: 102%;
+        }
+    }
+}

@@ -1,3 +1,20 @@
+@mixin buttonStyle(){
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    height: 30px;
+    padding: 8px;
+    background-color: $bg-botones;
+    color:$botones-text;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    &:hover{
+        color: lightseagreen;
+        font-size: 102%;
+    }
+}
+
 footer{
     background-color: $bg-footer;
     padding: 3em;
@@ -14,18 +31,22 @@ footer{
         padding:0.5em
     }
     .botonSub{
-        font-family: 'Nunito', sans-serif;
-        font-weight: bold;
-        height: 30px;
-        padding: 8px;
-        background-color: black;
-        color:aliceblue;
+       @include buttonStyle()
+       /*@extend .email <- si quisiera que .botonSub adquiera las propiedades de .email */
+    }
+
+    ul{
+        list-style: none;
         display: flex;
         justify-content: center;
         align-items: center;
-        &:hover{
-            color: lightseagreen;
-            font-size: 102%;
+
+        li{
+            padding: 0.6rem;
+            background-color: black;
+        }
+             img{
+            width: 30px;
         }
     }
 }

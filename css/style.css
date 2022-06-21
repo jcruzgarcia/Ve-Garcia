@@ -4,7 +4,7 @@ header .nav {
   align-items: center;
   justify-content: space-between; }
   header .nav .logo {
-    width: 5em; }
+    width: 70px; }
   header .nav .menu {
     list-style-type: none;
     padding: 10px;
@@ -14,13 +14,13 @@ header .nav {
       padding: 10px;
       margin: 10px; }
       header .nav .menu .boton:hover {
-        background-color: #296969;
+        background-color: #333232;
         border-radius: 0.7em; }
       header .nav .menu .boton a {
         text-decoration: none;
-        color: black; }
+        color: #333232; }
         header .nav .menu .boton a:hover {
-          color: aliceblue;
+          color: #e1e8ee;
           font-style: italic; }
 
 main {
@@ -63,14 +63,26 @@ footer {
     font-weight: bold;
     height: 30px;
     padding: 8px;
-    background-color: black;
-    color: aliceblue;
+    background-color: #333232;
+    color: #e1e8ee;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    text-decoration: none;
+    /*@extend .email <- si quisiera que .botonSub adquiera las propiedades de .email */ }
     footer .botonSub:hover {
       color: lightseagreen;
       font-size: 102%; }
+  footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    footer ul li {
+      padding: 0.6rem;
+      background-color: black; }
+    footer ul img {
+      width: 30px; }
 
 * {
   margin: 0;

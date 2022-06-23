@@ -1,26 +1,321 @@
-main{
-    background-color: $bg-main;
-    padding: 10em;
-    display: flex;
-    gap: 10px;
-    .letras{
-        display:flex;
+@mixin productos__card1(){
+        height: 500px;
+        padding: 1rem;
+        display: flex;
         justify-content: center;
-        align-items: left;
-        flex-direction: column;
-
-        .titulo1{
-            font-weight: bold;
-            font-size: 2em;
-            padding-bottom: 0.4em;
-        }
-        .description{
-            font-size: 1.2em;
-            font-style: italic;
+        align-items:center;
+        background-color: rgb(182, 212, 219);;
+        border-radius: 2rem;
+        .description__card1{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            line-height: 1.5;
         }
     }
-    img{
-        width: 47em;
-        border-radius: 2em;
+
+@mixin buttonStyle(){
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    height: 30px;
+    padding: 8px;
+    background-color: $bg-botones;
+    color: $botones-text;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 100px;
+    margin-top: 20px;
+    border-radius: 2px;
+    a{
+        text-decoration: none;
+        color: white;
+        &:hover{
+            color: lightseagreen;
+            font-size: 85%;
+        }
     }
 }
+
+@mixin presentationCard ($display) {
+    grid-area: $display;
+            color: aliceblue ;
+            background-color: rgb(36, 25, 17);
+            text-align: center;
+            border-radius: 1.4em;
+            margin: 10px;
+            line-height: 1.5;
+            img{
+                padding: 0.5em;
+                height: 300px;
+                border-radius: 100em;
+            }
+            h4{
+                font-size: 2em;
+            }
+            .description__nosotros{
+                padding: 3em;
+            }
+        }
+
+main{
+    background-color: $bg-main;
+    padding: 8em;
+    gap: 10px;
+    .section__inicio{
+        display: flex;
+        flex-direction: row;
+        @media screen and (max-width:1335px){
+            display: flex;
+            flex-direction: column;
+            }
+        .letras{
+            display:flex;
+            justify-content: center;
+
+            flex-direction: column;
+            padding: 1em;
+            .titulo1{
+                font-weight: bold;
+                font-size: 2em;
+                padding-bottom: 0.4em;
+            }
+            .description{
+                font-size: 1.2em;
+                line-height: 1.5;
+            }
+            .boton1__productos{
+                @include buttonStyle()
+            }
+        }
+    .imagen__grupo{
+        border-radius: 2rem;
+        display: flex;
+    }
+}
+    .containerP__productos{
+        .container__productos{
+            margin-bottom: 40px;
+            display: flex;
+            flex-direction: column;
+            font-size: x-large;
+        }
+        .productos__html{
+            .logo__html{
+                width: 40%
+            }
+            @include productos__card1();
+            .boton1__productos{
+                @include buttonStyle()
+            }
+        }
+        .productos__css{
+            margin-top: 40px;
+            .logo__css{
+                width: 75%;
+            }
+            .description__css{
+                padding-left: 30px;
+            }
+            @include productos__card1();
+            .boton1__productos{
+                @include buttonStyle();
+            }
+        }
+        .productos__bs{
+            margin-top: 40px;
+            .logo__bs{
+                margin: 30px;
+                width: 30%;
+            }
+            @include productos__card1();
+            .boton1__productos{
+                @include buttonStyle();
+            }
+        }
+        .productos__sass{
+            margin-top: 40px;
+            .logo__sass{
+                width: 27%;
+            }
+            .description__sass{
+            padding-left: 30px;
+            }
+            @include productos__card1();
+            .boton1__productos{
+                @include buttonStyle();
+            }
+        }
+    }
+}
+    .contenedor__grid{
+        background-color: rgb(43, 41, 39);
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas: 
+        "caja1 caja2 caja2"
+        "caja3 caja3 caja4"
+        "caja3 caja3 caja4"
+        "caja5 caja5 caja5"
+        "caja6 caja6 caja6"
+        "caja7 caja8 caja9";
+        gap: 0.4em;
+        .caja1{
+            grid-area: caja1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .caja2{
+            grid-area: caja2;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            color: aliceblue;
+            font-size: 3.7em;
+            background-image: url(/pruebaSASS/img/imagen1.jpg);
+            background-size: 115%;
+            background-repeat: no-repeat;
+            h1{
+                margin-left: 30px;
+            }
+        }
+        .caja3{
+            grid-area: caja3;
+            .imagen__nosotros{
+                width: 151%;
+            }
+        }
+        .caja4{
+            grid-area: caja4;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: aliceblue;
+            padding: 1em;
+            border-radius: 1rem;
+            background-color:rgba(56, 59, 59, 0.432);
+            line-height: 1.5;
+            h2{
+                font-size: 4em;
+                padding-bottom:0.5em;
+            }
+            .redes__nosotros{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+            }   
+                a{
+                    margin-top: 30px;
+                    
+                }
+                .imagen2__nosotros{
+                    border-radius: 0.8rem;
+                    width: 100%;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    
+                }
+                .seguinos__nosotros{
+                    padding-top: 3em;
+                }
+        }
+        .caja5{
+            grid-area: caja5;
+
+            background-image: url(/pruebaSASS/img/codeando.jpg);
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: 85%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: left;
+            h2{
+                margin-left: 10px;
+                color: aliceblue;
+                font-size: 5em;
+                font-weight: 900;
+
+            }
+            p{
+                margin-left: 10px;
+                color: aliceblue;
+                padding-bottom: 20px;
+            }
+        }
+        .caja6{
+            grid-area: caja6;
+            background-color: red;
+            background-image: url(/pruebaSASS/img/fotoequipo.jpg);
+            background-size: 100%;
+            background-position: 75% 25%;
+            background-repeat: no-repeat;
+            h3{
+                text-align: center;
+                font-size: xx-large;
+                background-color:rgba(56, 59, 59, 0.432);
+                color: aliceblue;
+                font-size: 5rem;
+            }
+            p{
+                text-align: center;
+                color: aliceblue;
+                padding: 1.2em;
+                line-height: 1.5;
+                background-color:rgba(56, 59, 59, 0.432); 
+            }
+        }
+        .caja7{
+             @include presentationCard(caja7)
+        }
+        .caja8{
+            @include presentationCard(caja8)
+        }
+        .caja9{
+            @include presentationCard(caja9)
+        }
+    }
+
+    .formulario{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        .textarea__form{
+            border: black
+        }
+    }
+    .data__contacto{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .data2__contacto{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        p{
+            font-size: medium;
+        }
+        iframe{
+            border-width: 2;
+            border: black;
+        }
+    }
+    .ubicacion__contacto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 3em;
+    }
+    

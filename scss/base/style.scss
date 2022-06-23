@@ -7,10 +7,37 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
+    font-family:'Nunito', sans-serif;
 }
 
 body{
     background-color: #5e98ac;
     font-family:'Nunito', sans-serif;
     font-weight: 800;
+}
+
+@media screen and (max-width:1335px){
+    .section__inicio{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:684px){
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    main{
+        font-size: 75%;
+        .containerP__productos{
+            .container__productos{
+                .productos__html{
+                    .description__card1{
+                        display: none;
+                    }
+                }
+            }
+        }
+        
+    }
 }

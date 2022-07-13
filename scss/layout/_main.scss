@@ -4,13 +4,18 @@
         display: flex;
         justify-content: center;
         align-items:center;
-        background-color: rgb(182, 212, 219);;
+        background-color: rgb(214, 219, 221);
         border-radius: 2rem;
         .description__card1{
+            h2{
+                font-size: 2.5em;
+            }
+            padding: 1rem;
             display: flex;
             justify-content: center;
             flex-direction: column;
             line-height: 1.5;
+            font-size: larger;
         }
     }
 
@@ -27,7 +32,7 @@
     text-decoration: none;
     width: 100px;
     margin-top: 20px;
-    border-radius: 2px;
+    border-radius: 10px;
     a{
         text-decoration: none;
         color: white;
@@ -96,14 +101,15 @@ main{
 }
     .containerP__productos{
         .container__productos{
-            margin-bottom: 40px;
+            margin-bottom: 80px;
             display: flex;
             flex-direction: column;
             font-size: x-large;
         }
         .productos__html{
             .logo__html{
-                width: 40%
+                height: 100%;
+                padding: 1em;
             }
             @include productos__card1();
             .boton1__productos{
@@ -113,10 +119,15 @@ main{
         .productos__css{
             margin-top: 40px;
             .logo__css{
-                width: 75%;
+                padding: 1em;
+                width: 25%
             }
             .description__css{
+                h2{
+                    font-size: 2.5em;
+                }
                 padding-left: 30px;
+                font-size: larger;
             }
             @include productos__card1();
             .boton1__productos{
@@ -127,7 +138,6 @@ main{
             margin-top: 40px;
             .logo__bs{
                 margin: 30px;
-                width: 30%;
             }
             @include productos__card1();
             .boton1__productos{
@@ -140,7 +150,13 @@ main{
                 width: 27%;
             }
             .description__sass{
-            padding-left: 30px;
+                h2{
+                    font-size: 2.5em;
+                }
+                width: 80%;
+                padding-left: 30px;
+                margin-right: 20px;
+                font-size: larger;
             }
             @include productos__card1();
             .boton1__productos{
@@ -150,6 +166,9 @@ main{
     }
 }
     .contenedor__grid{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
         background-color: rgb(43, 41, 39);
         padding: 0;
         margin: 0;
@@ -177,8 +196,7 @@ main{
             align-items: center;
             color: aliceblue;
             font-size: 3.7em;
-            background-image: url(/pruebaSASS/img/imagen1.jpg);
-            background-size: 115%;
+            background-image: url(../img/imagen1.jpg);
             background-repeat: no-repeat;
             h1{
                 margin-left: 30px;
@@ -192,14 +210,15 @@ main{
         }
         .caja4{
             grid-area: caja4;
+            font-size: x-large;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: space-around;
             align-items: center;
             color: aliceblue;
             padding: 1em;
             border-radius: 1rem;
-            background-color:rgba(56, 59, 59, 0.432);
+            background-color:rgba(56, 59, 59, 0.678);
             line-height: 1.5;
             h2{
                 font-size: 4em;
@@ -210,11 +229,9 @@ main{
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-
             }   
                 a{
                     margin-top: 30px;
-                    
                 }
                 .imagen2__nosotros{
                     border-radius: 0.8rem;
@@ -224,13 +241,12 @@ main{
                     
                 }
                 .seguinos__nosotros{
-                    padding-top: 3em;
+                    padding-top: 1em;
                 }
         }
         .caja5{
             grid-area: caja5;
-
-            background-image: url(/pruebaSASS/img/codeando.jpg);
+            background-image: url(../img/codeando.jpg);
             background-repeat: no-repeat;
             background-position: right;
             background-size: 85%;
@@ -238,12 +254,12 @@ main{
             flex-direction: column;
             justify-content: center;
             align-items: left;
+            font-size: larger;
             h2{
                 margin-left: 10px;
                 color: aliceblue;
                 font-size: 5em;
                 font-weight: 900;
-
             }
             p{
                 margin-left: 10px;
@@ -253,11 +269,11 @@ main{
         }
         .caja6{
             grid-area: caja6;
-            background-color: red;
-            background-image: url(/pruebaSASS/img/fotoequipo.jpg);
+            background-image: url(../img/fotoequipo.jpg);
             background-size: 100%;
             background-position: 75% 25%;
             background-repeat: no-repeat;
+            font-size: larger;
             h3{
                 text-align: center;
                 font-size: xx-large;
@@ -288,10 +304,15 @@ main{
         display:flex;
         justify-content: center;
         align-items: center;
+        background-color: $botones-text;
         .textarea__form{
-            border: black
+            border: black;
+            }
+        .btn__consulta{
+            background-color: $bg-botones;
+            color: $botones-text;
         }
-    }
+        }
     .data__contacto{
         display:flex;
         flex-direction: column;
@@ -300,6 +321,7 @@ main{
     }
     .data2__contacto{
         display:flex;
+        padding-top: 1em;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -318,4 +340,32 @@ main{
         align-items: center;
         padding: 3em;
     }
+
+    .cards__index{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        .card1__index{
+            background-color: $botones-text;
+            border-radius: 0.4em;
+            padding: 3.5em;
+            text-align: center;
+            width: 300px;
+        }
+        .card2__index{
+            @extend .card1__index
+        }
+        .card3__index{ 
+            @extend .card1__index
+        }
+    }
     
+    .title__index{
+        text-align: center;
+        padding:2em;
+        font-weight: 1500;
+        border: $botones-text;
+        border-style: dashed none none none;
+        margin-top: 100px;
+    }

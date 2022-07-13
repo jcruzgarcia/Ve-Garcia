@@ -24,7 +24,7 @@ header .nav {
           font-style: italic; }
 
 main {
-  background-color: #cbd5d8;
+  background-color: #ffffff;
   padding: 8em;
   gap: 10px; }
   main .section__inicio {
@@ -59,7 +59,7 @@ main {
         text-decoration: none;
         width: 100px;
         margin-top: 20px;
-        border-radius: 2px; }
+        border-radius: 10px; }
         main .section__inicio .letras .boton1__productos a {
           text-decoration: none;
           color: white; }
@@ -70,7 +70,7 @@ main {
       border-radius: 2rem;
       display: flex; }
   main .containerP__productos .container__productos {
-    margin-bottom: 40px;
+    margin-bottom: 80px;
     display: flex;
     flex-direction: column;
     font-size: x-large; }
@@ -80,15 +80,20 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #b6d4db;
+    background-color: #d6dbdd;
     border-radius: 2rem; }
     main .containerP__productos .productos__html .logo__html {
-      width: 40%; }
+      height: 100%;
+      padding: 1em; }
     main .containerP__productos .productos__html .description__card1 {
+      padding: 1rem;
       display: flex;
       justify-content: center;
       flex-direction: column;
-      line-height: 1.5; }
+      line-height: 1.5;
+      font-size: larger; }
+      main .containerP__productos .productos__html .description__card1 h2 {
+        font-size: 2.5em; }
     main .containerP__productos .productos__html .boton1__productos {
       font-family: 'Nunito', sans-serif;
       font-weight: bold;
@@ -102,7 +107,7 @@ main {
       text-decoration: none;
       width: 100px;
       margin-top: 20px;
-      border-radius: 2px; }
+      border-radius: 10px; }
       main .containerP__productos .productos__html .boton1__productos a {
         text-decoration: none;
         color: white; }
@@ -116,17 +121,25 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #b6d4db;
+    background-color: #d6dbdd;
     border-radius: 2rem; }
     main .containerP__productos .productos__css .logo__css {
-      width: 75%; }
+      padding: 1em;
+      width: 25%; }
     main .containerP__productos .productos__css .description__css {
-      padding-left: 30px; }
+      padding-left: 30px;
+      font-size: larger; }
+      main .containerP__productos .productos__css .description__css h2 {
+        font-size: 2.5em; }
     main .containerP__productos .productos__css .description__card1 {
+      padding: 1rem;
       display: flex;
       justify-content: center;
       flex-direction: column;
-      line-height: 1.5; }
+      line-height: 1.5;
+      font-size: larger; }
+      main .containerP__productos .productos__css .description__card1 h2 {
+        font-size: 2.5em; }
     main .containerP__productos .productos__css .boton1__productos {
       font-family: 'Nunito', sans-serif;
       font-weight: bold;
@@ -140,7 +153,7 @@ main {
       text-decoration: none;
       width: 100px;
       margin-top: 20px;
-      border-radius: 2px; }
+      border-radius: 10px; }
       main .containerP__productos .productos__css .boton1__productos a {
         text-decoration: none;
         color: white; }
@@ -154,16 +167,19 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #b6d4db;
+    background-color: #d6dbdd;
     border-radius: 2rem; }
     main .containerP__productos .productos__bs .logo__bs {
-      margin: 30px;
-      width: 30%; }
+      margin: 30px; }
     main .containerP__productos .productos__bs .description__card1 {
+      padding: 1rem;
       display: flex;
       justify-content: center;
       flex-direction: column;
-      line-height: 1.5; }
+      line-height: 1.5;
+      font-size: larger; }
+      main .containerP__productos .productos__bs .description__card1 h2 {
+        font-size: 2.5em; }
     main .containerP__productos .productos__bs .boton1__productos {
       font-family: 'Nunito', sans-serif;
       font-weight: bold;
@@ -177,7 +193,7 @@ main {
       text-decoration: none;
       width: 100px;
       margin-top: 20px;
-      border-radius: 2px; }
+      border-radius: 10px; }
       main .containerP__productos .productos__bs .boton1__productos a {
         text-decoration: none;
         color: white; }
@@ -191,17 +207,26 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #b6d4db;
+    background-color: #d6dbdd;
     border-radius: 2rem; }
     main .containerP__productos .productos__sass .logo__sass {
       width: 27%; }
     main .containerP__productos .productos__sass .description__sass {
-      padding-left: 30px; }
+      width: 80%;
+      padding-left: 30px;
+      margin-right: 20px;
+      font-size: larger; }
+      main .containerP__productos .productos__sass .description__sass h2 {
+        font-size: 2.5em; }
     main .containerP__productos .productos__sass .description__card1 {
+      padding: 1rem;
       display: flex;
       justify-content: center;
       flex-direction: column;
-      line-height: 1.5; }
+      line-height: 1.5;
+      font-size: larger; }
+      main .containerP__productos .productos__sass .description__card1 h2 {
+        font-size: 2.5em; }
     main .containerP__productos .productos__sass .boton1__productos {
       font-family: 'Nunito', sans-serif;
       font-weight: bold;
@@ -215,7 +240,7 @@ main {
       text-decoration: none;
       width: 100px;
       margin-top: 20px;
-      border-radius: 2px; }
+      border-radius: 10px; }
       main .containerP__productos .productos__sass .boton1__productos a {
         text-decoration: none;
         color: white; }
@@ -224,6 +249,9 @@ main {
           font-size: 85%; }
 
 .contenedor__grid {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
   background-color: #2b2927;
   padding: 0;
   margin: 0;
@@ -244,8 +272,7 @@ main {
     align-items: center;
     color: aliceblue;
     font-size: 3.7em;
-    background-image: url(/pruebaSASS/img/imagen1.jpg);
-    background-size: 115%;
+    background-image: url(../img/imagen1.jpg);
     background-repeat: no-repeat; }
     .contenedor__grid .caja2 h1 {
       margin-left: 30px; }
@@ -255,14 +282,15 @@ main {
       width: 151%; }
   .contenedor__grid .caja4 {
     grid-area: caja4;
+    font-size: x-large;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     color: aliceblue;
     padding: 1em;
     border-radius: 1rem;
-    background-color: rgba(56, 59, 59, 0.432);
+    background-color: rgba(56, 59, 59, 0.678);
     line-height: 1.5; }
     .contenedor__grid .caja4 h2 {
       font-size: 4em;
@@ -280,17 +308,18 @@ main {
       margin-top: 10px;
       margin-bottom: 10px; }
     .contenedor__grid .caja4 .seguinos__nosotros {
-      padding-top: 3em; }
+      padding-top: 1em; }
   .contenedor__grid .caja5 {
     grid-area: caja5;
-    background-image: url(/pruebaSASS/img/codeando.jpg);
+    background-image: url(../img/codeando.jpg);
     background-repeat: no-repeat;
     background-position: right;
     background-size: 85%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: left; }
+    align-items: left;
+    font-size: larger; }
     .contenedor__grid .caja5 h2 {
       margin-left: 10px;
       color: aliceblue;
@@ -302,11 +331,11 @@ main {
       padding-bottom: 20px; }
   .contenedor__grid .caja6 {
     grid-area: caja6;
-    background-color: red;
-    background-image: url(/pruebaSASS/img/fotoequipo.jpg);
+    background-image: url(../img/fotoequipo.jpg);
     background-size: 100%;
     background-position: 75% 25%;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    font-size: larger; }
     .contenedor__grid .caja6 h3 {
       text-align: center;
       font-size: xx-large;
@@ -371,9 +400,13 @@ main {
 .formulario {
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  background-color: #e1e8ee; }
   .formulario .textarea__form {
     border: black; }
+  .formulario .btn__consulta {
+    background-color: #333232;
+    color: #e1e8ee; }
 
 .data__contacto {
   display: flex;
@@ -383,6 +416,7 @@ main {
 
 .data2__contacto {
   display: flex;
+  padding-top: 1em;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
@@ -399,6 +433,26 @@ main {
   align-items: center;
   padding: 3em; }
 
+.cards__index {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center; }
+  .cards__index .card1__index, .cards__index .card2__index, .cards__index .card3__index {
+    background-color: #e1e8ee;
+    border-radius: 0.4em;
+    padding: 3.5em;
+    text-align: center;
+    width: 300px; }
+
+.title__index {
+  text-align: center;
+  padding: 2em;
+  font-weight: 1500;
+  border: #e1e8ee;
+  border-style: dashed none none none;
+  margin-top: 100px; }
+
 footer {
   background-color: #8dbceb;
   padding: 3em;
@@ -406,6 +460,8 @@ footer {
   gap: 10px;
   justify-content: center;
   align-items: center; }
+  footer .suscribe__footer {
+    font-family: 'Nunito', sans-serif; }
   footer .email {
     border-style: solid;
     border: 5px;
@@ -422,8 +478,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-decoration: none;
-    /*@extend .email <- si quisiera que .botonSub adquiera las propiedades de .email */ }
+    text-decoration: none; }
     footer .botonSub:hover {
       color: lightseagreen;
       font-size: 102%; }
@@ -453,11 +508,117 @@ body {
     display: flex;
     flex-direction: column; } }
 
+@media screen and (max-width: 1299px) {
+  main {
+    font-size: 85%; } }
+
+@media screen and (max-width: 860px) {
+  main {
+    font-size: 85%; }
+    main .productos__html {
+      display: flex;
+      flex-direction: column; }
+    main .productos__bs .logo__bs {
+      width: 200px; } }
+
+@media screen and (max-width: 860px) and (max-width: 810px) {
+  main {
+    font-size: 75%; }
+    main .productos__html {
+      display: flex;
+      flex-direction: column; }
+      main .productos__html .logo__html {
+        width: 100px;
+        height: 100px; }
+    main .productos__bs {
+      display: flex;
+      flex-direction: column; }
+      main .productos__bs .logo__bs {
+        width: 150px; }
+    main .productos__css {
+      display: flex;
+      flex-direction: column; }
+      main .productos__css .logo__css {
+        width: 135%; }
+    main .productos__sass {
+      display: flex;
+      flex-direction: column; } }
+
 @media screen and (max-width: 684px) {
   footer {
     display: flex;
     flex-direction: column; }
+  .ubicacion__contacto {
+    display: none; } }
+
+@media screen and (max-width: 540px) {
   main {
     font-size: 75%; }
-    main .containerP__productos .container__productos .productos__html .description__card1 {
-      display: none; } }
+    main .productos__html {
+      display: flex;
+      flex-direction: column; }
+      main .productos__html .logo__html {
+        display: none; }
+    main .productos__bs {
+      display: flex;
+      flex-direction: column; }
+      main .productos__bs .logo__bs {
+        display: none; }
+    main .productos__css {
+      display: flex;
+      flex-direction: column; }
+      main .productos__css .logo__css {
+        display: none; }
+    main .productos__sass {
+      display: flex;
+      flex-direction: column; }
+      main .productos__sass .logo__sass {
+        display: none; }
+    main .subtitle__user {
+      text-align: center; }
+    main .banner {
+      text-align: center; }
+    main .data2text__contacto {
+      text-align: center; } }
+
+@media screen and (max-width: 481px) {
+  .menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+  main {
+    font-size: 65%; }
+    main h1 {
+      font-size: 95%; }
+    main .p__productos {
+      display: none; }
+    main .description__productos {
+      font-size: 75%; } }
+
+@media screen and (max-width: 375px) {
+  main {
+    font-size: 55%; }
+    main .container__productos h1 {
+      font-size: 95%; }
+    main .container__productos p {
+      font-size: 65%; } }
+
+@media screen and (max-width: 1055px) {
+  .contenedor__grid {
+    display: flex;
+    flex-direction: column; }
+    .contenedor__grid .imagen__nosotros {
+      display: none; }
+  .productos__html {
+    display: flex;
+    flex-direction: column; }
+    .productos__html .logo__html {
+      width: 200px; }
+  .productos__bs .logo__bs {
+    width: 300px; } }
+
+@media screen and (max-width: 1120px) {
+  .cards__index {
+    display: flex;
+    flex-direction: column;
+    gap: 1em; } }

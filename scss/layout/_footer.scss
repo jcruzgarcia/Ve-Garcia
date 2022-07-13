@@ -4,7 +4,7 @@
     height: 30px;
     padding: 8px;
     background-color: $bg-botones;
-    color:$botones-text;
+    color: $botones-text;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,6 +22,9 @@ footer{
     gap: 10px;
     justify-content: center;
     align-items: center;
+    .suscribe__footer{
+        font-family: 'Nunito', sans-serif;
+    }
     .email{
         border-style: solid;
         border: 5px;
@@ -31,7 +34,6 @@ footer{
     }
     .botonSub{
        @include buttonStyle()
-       /*@extend .email <- si quisiera que .botonSub adquiera las propiedades de .email */
     }
 
     ul{
